@@ -22,10 +22,10 @@ public class Semaphore {
 
             // Assign cars to the correct CarStation
             for (Car car : cars) {
-                if ("gas".equalsIgnoreCase(car.getFuelType())) {
+                if ("GAS".equalsIgnoreCase(car.getFuelType())) {
                     gasCarStation.addCar(car);
                     gasCarCount++;
-                } else if ("electric".equalsIgnoreCase(car.getFuelType())) {
+                } else if ("ELECTRIC".equalsIgnoreCase(car.getFuelType())) {
                     electricCarStation.addCar(car);
                     electricCarCount++;
                 }

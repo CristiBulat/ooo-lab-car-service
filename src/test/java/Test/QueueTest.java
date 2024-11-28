@@ -1,9 +1,6 @@
 package Test;
-import queue.CircularQueue;
-import queue.LinkedQueue;
-import queue.Queue;
+import queue.*;
 import org.junit.jupiter.api.Test;
-import queue.SimpleQueue;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -2,6 +2,7 @@ package Car;
 import Dinner.*;
 import FuelStation.*;
 import queue.LinkedQueue;
+import queue.Queue;
 
 public class CarStation {
     private final Dineable peopleDiningService;
@@ -10,11 +11,11 @@ public class CarStation {
     private final Refuelable gasRefuilingservice;
     private final LinkedQueue<Car> queue;
 
-   public CarStation(Dineable peopleDiningService, Dineable robotDining, Refuelable electricRefuelingService, Refuelable gasRefuilingservice){
-        this.peopleDiningService = peopleDiningService;
-        this.robotDiningService = robotDining;
-        this.electricRefuelingService = electricRefuelingService;
-        this.gasRefuilingservice = gasRefuilingservice;
+   public CarStation(){
+        this.peopleDiningService = new PeopleDinner();
+        this.robotDiningService = new RobotDinner();
+        this.electricRefuelingService = new ElectricStation();
+        this.gasRefuilingservice = new GasStation();
         this.queue = new LinkedQueue<>();
    }
 
@@ -44,5 +45,9 @@ public class CarStation {
             }
         }
         System.out.println("All cars have been served.");
+    }
+
+    public Queue<Car> getQueue() {
+       return queue;
     }
 }
