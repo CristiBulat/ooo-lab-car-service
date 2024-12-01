@@ -38,4 +38,8 @@ public class Car {
     public boolean needsDinner(){
         return needsDinner;
     }
+
+    public int getConsumption(){
+        return consumption;
+    }
 }

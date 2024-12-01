@@ -1,4 +1,5 @@
 package FuelStation;
+import Car.Car;
 
 public class ElectricStation implements Refuelable{
     private static int electricCarsFueled = 0;

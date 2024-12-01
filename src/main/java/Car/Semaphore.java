@@ -42,4 +42,12 @@ public class Semaphore {
     public int getElectricCarCount() {
         return electricCarCount;
     }
+
+    public CarStation gasStation(){
+        return gasCarStation;
+    }
+
+    public CarStation electricStation(){
+        return electricCarStation;
+    }
 }
